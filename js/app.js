@@ -1,4 +1,4 @@
-//get income value
+//getting income value
 function getIncomeValue(){
     const incomeElement = document.getElementById('income-input');
     const incomeValue = parseFloat(incomeElement.value);
