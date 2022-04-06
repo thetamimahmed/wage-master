@@ -17,7 +17,14 @@ function expenses(){
     return total;
 }
 
+//get savings value
+function savings(){
+    const saveInput = document.getElementById('save-input');
+    const saveValue = parseFloat(saveInput.value);
+    return saveValue;
+}
+
 //calculate button event listener
 document.getElementById('calc-btn').addEventListener('click', function(){
-
+   
 })
