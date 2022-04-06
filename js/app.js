@@ -24,7 +24,7 @@ function savings(){
     return saveValue;
 }
 
-//calculate expense button event listener
+//calculate expense button click event listener
 document.getElementById('calc-btn').addEventListener('click', function(){
    const incomeTotal = getIncomeValue();
    const expensesMoneyTotal = expenses();
@@ -40,7 +40,7 @@ document.getElementById('calc-btn').addEventListener('click', function(){
     balanceElement.innerText = balanceTotal;
 })
 
-//save money button event listener
+//save money button click event listener
 document.getElementById('save-btn').addEventListener('click', function(){
 
 })
