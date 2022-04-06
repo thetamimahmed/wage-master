@@ -31,8 +31,12 @@ document.getElementById('calc-btn').addEventListener('click', function(){
    //get expense total
    const expensesElement = document.getElementById('expense-total');
    const expensesMoney = parseFloat(expensesElement.innerText); 
-   const totalExpenses = expensesMoney + expensesMoneyTotal;
-   expensesElement.innerText = totalExpenses;
+   if(expensesMoneyTotal < incomeTotal){
+        const totalExpenses = expensesMoney + expensesMoneyTotal;
+        expensesElement.innerText = totalExpenses;
+   }else{
+       alert('You have not enought money')
+   }
    //get balance total
     const balanceElement = document.getElementById('balance-total');
     const balanceAmount = parseFloat(balanceElement.innerText);
