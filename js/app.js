@@ -24,7 +24,23 @@ function savings(){
     return saveValue;
 }
 
-//calculate button event listener
+//calculate expense button event listener
 document.getElementById('calc-btn').addEventListener('click', function(){
-   
+   const incomeTotal = getIncomeValue();
+   const expensesMoneyTotal = expenses();
+   //get expense total
+   const expensesElement = document.getElementById('expense-total');
+   const expensesMoney = parseFloat(expensesElement.innerText); 
+   const totalExpenses = expensesMoney + expensesMoneyTotal;
+   expensesElement.innerText = totalExpenses;
+   //get balance total
+    const balanceElement = document.getElementById('balance-total');
+    const balanceAmount = parseFloat(balanceElement.innerText);
+    const balanceTotal = incomeTotal - totalExpenses;
+    balanceElement.innerText = balanceTotal;
+})
+
+//save money button event listener
+document.getElementById('save-btn').addEventListener('click', function(){
+
 })
