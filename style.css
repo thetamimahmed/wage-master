@@ -10,3 +10,65 @@
 .fa-money-bill-trend-up{
     color: #ffa801;
 }
+section{
+    width: 90%;
+    margin: auto;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+.img-side img{
+    width: 100%;
+}
+.calculate-side{
+    background-color: rgba(110, 110, 110, 0.04);
+    padding: 10px;
+    text-align: center;
+}
+.calc-title{
+    font-size: 25px;
+}
+.input-name{
+    font-size: 18px;
+    font-weight: bold;
+}
+.calc-input{
+    font-size: 18px;
+    padding: 5px;
+    border: 1px solid #ffa801;
+    border-radius: 5px;
+}
+.input-container{
+    margin: 15px;
+}
+.btn{
+    background-color: #3c40c6;
+    color: white;
+    font-size: 22px;
+    padding: 5px 22px;
+    border-radius: 5px;
+    border: 2px solid #3c40c6;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+.btn:focus{
+    border: 2px solid #ffa801;
+}
+#save-input{
+    width: 80px;
+    text-align: center;
+    font-size: 18px;
+    padding: 7px;
+    border: 1px solid #ffa801;
+    border-radius: 5px;
+}
+.percentage{
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0px 10px;
+}
+#save-btn{
+    text-decoration: none;
+}

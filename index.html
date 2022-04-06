@@ -13,7 +13,59 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="title">Wage Master <i class="fa-solid fa-money-bill-trend-up"></i></h1>
+    <!-- header title section  -->
+    <header>
+        <h1 class="title">Wage Master <i class="fa-solid fa-money-bill-trend-up"></i></h1>
+    </header>
+    
+    <!-- main section  -->
+    <main>
+        <section>
+            <div class="container">
+                <div class="img-side">
+                    <img src="images/money-pic.jpg" alt="">
+                </div>
+                <div class="calculate-side">
+                    <!-- income inputs  -->
+                    <h3 class="calc-title">Income</h3>
+                    <label for="income-input" class="input-name">Income: </label>
+                    <input class="calc-input" type="text" name="income-input" id="income-input">
+                    <!-- Expenses inputs  -->
+                    <h3 class="calc-title">Expenses</h3>
+                    <!-- food input  -->
+                    <div class="input-container">
+                        <label for="food-input" class="input-name">Food: </label>
+                        <input class="calc-input" type="text" name="food-input" id="food-input">
+                    </div>
+                    <!-- rent input  -->
+                    <div class="input-container">
+                        <label for="rent-input" class="input-name">Rent: </label>
+                        <input class="calc-input" type="text" name="rent-input" id="rent-input">
+                    </div>
+                    <!-- clothes input  -->
+                    <div class="input-container">
+                        <label for="clothes-input" class="input-name" style="margin-left: -23px;">Clothes: </label>
+                        <input class="calc-input" type="text" name="clothes-input" id="clothes-input">
+                    </div>
+                    <!-- calculate button  -->
+                    <button id="calc-btn" class="btn">Calculate</button>
+                    <!-- expense and balance  -->
+                    <h2>Total Expenses: <span  id="expense-total">00</span></h2>
+                    <h2>Balance: <span  id="balance-total">00</span></h2>
+                    <!-- saving input  -->
+                    <div class="input-container">
+                        <label class="input-name" for="save">Save:</label>
+                        <input type="text" name="save" id="save-input">
+                        <span class="percentage">%</span>
+                        <button id="save-btn" class="btn">Save</button>
+                    </div>
+                    <!-- saving and remainning balance  -->
+                    <h2>Saving Amount: <span class="saving-total">00</span></h2>
+                    <h2>Remainning Balance: <span class="remain-total">00</span></h2>
+                </div>
+            </div>
+        </section>
+    </main>
     <!-- link js file  -->
     <script src="js/app.js"></script>
 </body>
